@@ -1,0 +1,2 @@
+uav_circle
+-DCATKIN_DEVEL_PREFIX=/home/isaac/uav_ws/devel -DCMAKE_INSTALL_PREFIX=/home/isaac/uav_ws/install -G Unix Makefiles
