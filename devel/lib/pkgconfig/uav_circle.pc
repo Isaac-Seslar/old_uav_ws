@@ -3,6 +3,6 @@ prefix=/home/isaac/uav_ws/devel
 Name: uav_circle
 Description: Description of uav_circle
 Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+Cflags: -I/home/isaac/uav_ws/src/uav_circle/include
+Libs: -L${prefix}/lib -luav_circle
+Requires: roscpp rospy std_msgs

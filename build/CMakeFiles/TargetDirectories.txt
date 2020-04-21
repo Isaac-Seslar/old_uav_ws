@@ -38,6 +38,7 @@
 /home/isaac/uav_ws/build/uav_circle/CMakeFiles/install/strip.dir
 /home/isaac/uav_ws/build/uav_circle/CMakeFiles/install/local.dir
 /home/isaac/uav_ws/build/uav_circle/CMakeFiles/rebuild_cache.dir
+/home/isaac/uav_ws/build/uav_circle/CMakeFiles/test.dir
 /home/isaac/uav_ws/build/uav_circle/CMakeFiles/list_install_components.dir
 /home/isaac/uav_ws/build/uav_circle/CMakeFiles/roscpp_generate_messages_py.dir
 /home/isaac/uav_ws/build/uav_circle/CMakeFiles/roscpp_generate_messages_eus.dir
@@ -56,4 +57,4 @@
 /home/isaac/uav_ws/build/uav_circle/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /home/isaac/uav_ws/build/uav_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir
 /home/isaac/uav_ws/build/uav_circle/CMakeFiles/std_msgs_generate_messages_py.dir
-/home/isaac/uav_ws/build/uav_circle/CMakeFiles/test.dir
+/home/isaac/uav_ws/build/uav_circle/CMakeFiles/uav_circle_node.dir

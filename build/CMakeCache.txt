@@ -375,6 +375,9 @@ std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 //Value Computed by CMake
 uav_circle_BINARY_DIR:STATIC=/home/isaac/uav_ws/build/uav_circle
 
+//Dependencies for target
+uav_circle_LIB_DEPENDS:STATIC=
+
 //Value Computed by CMake
 uav_circle_SOURCE_DIR:STATIC=/home/isaac/uav_ws/src/uav_circle
 
