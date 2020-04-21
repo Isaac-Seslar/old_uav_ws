@@ -203,4 +203,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "uav_circle/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "uav_circle/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake"
   "uav_circle/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "uav_circle/CMakeFiles/uav_circle_node.dir/DependInfo.cmake"
   )

@@ -91,6 +91,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -123,17 +134,6 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -392,6 +392,48 @@ std_msgs_generate_messages_py/fast:
 	cd /home/isaac/uav_ws/build && $(MAKE) -f uav_circle/CMakeFiles/std_msgs_generate_messages_py.dir/build.make uav_circle/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+# Convenience name for target.
+uav_circle/CMakeFiles/uav_circle_node.dir/rule:
+	cd /home/isaac/uav_ws/build && $(MAKE) -f CMakeFiles/Makefile2 uav_circle/CMakeFiles/uav_circle_node.dir/rule
+.PHONY : uav_circle/CMakeFiles/uav_circle_node.dir/rule
+
+# Convenience name for target.
+uav_circle_node: uav_circle/CMakeFiles/uav_circle_node.dir/rule
+
+.PHONY : uav_circle_node
+
+# fast build rule for target.
+uav_circle_node/fast:
+	cd /home/isaac/uav_ws/build && $(MAKE) -f uav_circle/CMakeFiles/uav_circle_node.dir/build.make uav_circle/CMakeFiles/uav_circle_node.dir/build
+.PHONY : uav_circle_node/fast
+
+src/circle.o: src/circle.cpp.o
+
+.PHONY : src/circle.o
+
+# target to build an object file
+src/circle.cpp.o:
+	cd /home/isaac/uav_ws/build && $(MAKE) -f uav_circle/CMakeFiles/uav_circle_node.dir/build.make uav_circle/CMakeFiles/uav_circle_node.dir/src/circle.cpp.o
+.PHONY : src/circle.cpp.o
+
+src/circle.i: src/circle.cpp.i
+
+.PHONY : src/circle.i
+
+# target to preprocess a source file
+src/circle.cpp.i:
+	cd /home/isaac/uav_ws/build && $(MAKE) -f uav_circle/CMakeFiles/uav_circle_node.dir/build.make uav_circle/CMakeFiles/uav_circle_node.dir/src/circle.cpp.i
+.PHONY : src/circle.cpp.i
+
+src/circle.s: src/circle.cpp.s
+
+.PHONY : src/circle.s
+
+# target to generate assembly for a file
+src/circle.cpp.s:
+	cd /home/isaac/uav_ws/build && $(MAKE) -f uav_circle/CMakeFiles/uav_circle_node.dir/build.make uav_circle/CMakeFiles/uav_circle_node.dir/src/circle.cpp.s
+.PHONY : src/circle.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -401,6 +443,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
@@ -419,7 +462,10 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... test"
+	@echo "... uav_circle_node"
+	@echo "... src/circle.o"
+	@echo "... src/circle.i"
+	@echo "... src/circle.s"
 .PHONY : help
 
 

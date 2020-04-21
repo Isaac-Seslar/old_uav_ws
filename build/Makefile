@@ -479,6 +479,19 @@ std_msgs_generate_messages_py/fast:
 	$(MAKE) -f uav_circle/CMakeFiles/std_msgs_generate_messages_py.dir/build.make uav_circle/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+#=============================================================================
+# Target rules for targets named uav_circle_node
+
+# Build rule for target.
+uav_circle_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uav_circle_node
+.PHONY : uav_circle_node
+
+# fast build rule for target.
+uav_circle_node/fast:
+	$(MAKE) -f uav_circle/CMakeFiles/uav_circle_node.dir/build.make uav_circle/CMakeFiles/uav_circle_node.dir/build
+.PHONY : uav_circle_node/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -516,6 +529,7 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... uav_circle_node"
 .PHONY : help
 
 
